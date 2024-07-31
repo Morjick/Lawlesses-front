@@ -1,0 +1,74 @@
+.pointer {
+  cursor: pointer;
+}
+
+.admin-href {
+  color: var(--admin-primary-color);
+}
+
+.text-hidden {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.block {
+  display: block;
+}
+
+.tags-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  span {
+    background: var(--admin-primary-gradient);
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &.primary {
+    span {
+      border: 1px solid var(--primary-color);
+      background: transparent;
+    }
+  }
+}
+
+.interface-tab {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  padding: 2px 5px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: all .4s;
+  overflow: hidden;
+
+  img {
+    width: 20px;
+  }
+
+  .nuxt-icon {
+    span, svg, path {
+      font-size: 24px;
+      transform: translateY(2px);
+    }
+  }
+
+  &:hover {
+    background: var(--alternative-color);
+  }
+}
